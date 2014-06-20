@@ -1,0 +1,137 @@
+PartDaddy's Design Parameters
+
+
+=======================================================
+Heated Beds:
+=======================================================
+
+mounting holes (and center hole): 
+.177 outter dia (pad area) / .126 hole through
+via .06 outter dia / .038 hole
+
+_______________________________________________________
+copper pours:
+
+[Pouring]
+---------
+solid fill
+clearance 0.1 inch
+not check "use net clearance"
+line width .025 in
+line spacing .025 in
+island removal:
+check min area 0.05 in^2
+uncheck internal
+uncheck unconnected
+pour priority = 0
+current state "unpoured"
+
+[Connectivity]
+--------------
+Connect to Net = None
+Hide Net Ratlines = All Ratlines
+Thermals: Direct
+Spoke Width .02 in
+uncheck "direct connection for vias"
+uncheck "separate thermals for SMD"
+
+
+[Border]
+--------
+( dig an area completely around the circular board )
+X 0 Y 0 
+check "depending on Board"
+Board Clearance - .04 in
+check "snap to board outline"
+_________________________________________________________
+
+
+6/19/2014
+ONYX REV 6 trial
+by PartDaddy
+
+at 29C, shoot for .9 ohm
+
+mastercam spiral multi-vari-pitch (that's a PartDaddy Term) 
+inner spiral
+radius = 7mm      / 7mm
+initial pitch 6.0 / 7.0
+Final pitch 7.0   / 8.0
+revolutions ?     / 4
+
+middle spiral
+radius = 59mm     / 35mm
+intial pitch 8.0  / 7
+fianl pitch 7.0   / 7
+revolutions 3     / 4
+
+outter spiral:
+radius =  ?       / 63mm
+initial pitch 7   / 7
+final pitch 6     / 6
+revolutions 9     / 12
+
+
+length 9262mm     / 9291mm
+
+0.93 ohm at 25C   / 0.94ohm
+1.22 ohm at 100C  / 1.22 ohm
+
+
+
+
+
+_________________________________________________________
+
+
+5/8/2014
+ONYX REV 5
+
+at 25C, shoot for 1 ohm 
+
+the viotek 450W will do it !!
+
+mastercam spiral variable pitch
+raduis = 7mm
+intitial pitch = 8mm
+final pitch = 5.25mm
+trace 4.75 (keeps .02" gap between traces at final outside pitch)
+1 oz copper FR4 double sided circuit board
+black mask
+white silk
+
+
+
+
+
+
+
+
+=========================================================
+
+OLD * OLD * OLD * OLD * OLD * OLD * OLD * OLD * OLD * OLD 
+
+=========================================================
+Heated bed trace resistance 1.22 ohm target OLD
+
+Shoot for 1.0 ohm as of 5/8/2014
+
+using an ATX PSU 12VDC
+=========================================================
+
+58744 ORION HB  1 oz/ft^3 copper
+3 mm wide trace, 7844mm long (297in)
+1.22 ohm @25C
+1.58 ohm @100C
+I=V*R  12VDC * 1.2 ohm = 14.4 AMP
+
+
+_________________________________________________________
+58742 ONYX HB REV5 1 oz/ft^3 copper 1.0 ohm target  (1.22 ohm is OLD TARGET !!)
+3.9 mm wide trace, 9834mm long
+
+mastercam spiral variable pitch
+raduis = 8mm
+intitial pitch = 8mm
+final pitch = 5mm
+
