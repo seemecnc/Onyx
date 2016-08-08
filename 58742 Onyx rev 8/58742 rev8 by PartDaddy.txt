@@ -1,0 +1,1 @@
+rev 8 is merely a 1mm thick board of rev 7
